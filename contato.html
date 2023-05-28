@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contato.css" type="text/css">
+    
+
+</head>
+<body>
+     <header> <!--inicio cabeçalho-->
+        <h1>Contato</h1>
+     </header><!--fim cabeçalho-->
+
+     <nav> <!--inicio nav---links de navegação-->
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="https://github.com/alessandroespinola" target="_blank">Github</a></li>
+
+        </ul>
+     </nav> <!--fim nav---links de navegação-->
+
+     <div class="row">
+       <form action="https://api.staticforms.xyz/submit" method="post" class="card">
+        <input type="hidden" name="accessKey" value="385ab1e3-5eb1-4cf8-80c4-ca27aca67bb5">
+        <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+
+        <div>
+            <label for="inputNome">Primeiro Nome:</label>
+            <input type="text" id="inputNome" name="name" required maxlength="25" minlength="2">
+            <span></span>
+        </div>
+
+        <div>
+            <label for="imputEmail">Endereço de Email:</label>
+            <input type="email"  id="imputEmail" name="email" required maxlength="50">
+            <span></span>
+        </div>
+
+        <div>
+            <label for="textAreaMensagem">Mensagem:</label>
+            <textarea name="message" id="textAreaMensagem" required maxlength="100"></textarea>
+            <span></span>
+        </div>
+
+        <button>Enviar mensagem</button>
+       </form>
+
+    
+
+ </div>
+
+ <footer> <!--inicio footer - rodape-->
+    <dl>
+        <dt>E-mail:</dt>
+            <dd>Alessandro1984@sapo.pt</dd>
+            <br>
+        <dt>Telefone:</dt>
+        <dd>(000) 00000-0000</dd>
+    </dl>
+
+    <p>EdiCursos</p>
+ </footer><!--fim footer - rodape-->
+
+ 
+</body>
+</html>
