@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            
+        }
+
+        th,td {
+            padding: 5px 10px;
+        }
+
+        th{
+            background-color: rgb(21, 4, 28);
+            color: white;
+
+        }
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* odd aplicado a todos os elemntos impares*/
+        
+        table tr:nth-child(odd) {
+            background-color: rgb(139, 131, 131);
+        }
+
+        /* even aplicando a todos os elementos pares*/
+        table tr:nth-child(even) {
+            	background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <h3>Tabela</h3>
+    
+    <!--1 tabela-->
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Telefone</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>29 anos</td>
+            <td>(46) 99110-7782</td>
+        </tr>
+        <tr>
+            <td>Miguel</td>
+            <td>29 anos</td>
+            <td>(46) 99110-7782</td>
+        </tr>
+
+        <tr>
+            <td>Fernando</td>
+            <td>29 anos</td>
+            <td>(46) 99110-7782</td>
+        </tr>
+
+        <tr>
+            <td>Patricia</td>
+            <td>32 anos</td>
+            <td>(46) 99110-7782</td>
+        </tr>
+
+        <tr>
+            <td>Laura</td>
+            <td>29 anos</td>
+            <td>(46) 99110-7782</td>
+        </tr>
+
+
+    </table> <!-- tabela-->
+    <h3>Tabela com Colspan</h3>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th colspan="2">Telefone</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>29 anos</td>
+            <td>(46) 99110-7782</td>
+            <td>(46) 99110-7782</td>
+        </tr>
+        <tr>
+            <td>Patricia</td>
+            <td>32 anos</td>
+            <td>(46) 99110-7782</td>
+           <td>(46) 99110-7782</td>
+        </tr>
+
+    </table>  <!-- tabela-->
+
+    <h3>Tabela com Rowspan</h3>
+
+    <table>
+        <tr>
+            <th>Sexo</th>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th colspan="2">Telefone</th>
+        </tr>
+        <tr>
+            <td>M</td>
+            <td>João</td>
+            <td>29 anos</td>
+            <td>(46) 99110-7782</td>
+            <td>(46) 99110-7782</td>
+        </tr>
+        <tr>
+            <td rowspan="2">F</td>
+            <td>Patricia</td>
+            <td>32 anos</td>
+            <td>(46) 99110-7782</td>
+           <td>(46) 99110-7782</td>
+        </tr>
+        <tr>
+            
+            <td>Fernanda</td>
+            <td>32 anos</td>
+            <td>(46) 99110-7782</td>
+           <td>(46) 99110-7782</td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
