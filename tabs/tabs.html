@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="tab">
+        <button id="tab-padrao" class="tab-button" onclick="abrirTab(event, 'html')">HTML</button>
+        <button class="tab-button" onclick="abrirTab( event, 'css')">CSS</button>    
+        <button class="tab-button" onclick="abrirTab(event, 'JavaScript')">JavaScript</button> 
+    </div>
+
+    <div id="html" class="conteudo">
+        <h3>HTML</h3>
+        <p>HTML é uma linguagem de marcação padrão utilizada no mundo inteiro para desenvolver páginas web. A sigla HTML significa Hypertext Markup Language, que traduzindo para português significa “Linguagem de Marcação de Hipertexto”.
+        </p>
+    </div>
+
+    <div id="css" class="conteudo">
+        <h3>CSS</h3>
+        <p>A sigla CSS significa Cascading Style Sheets, que traduzindo para português significa “folhas de estilo em cascata”. É uma linguagem que complementa a linguagem HTML.</p>
+    </div>
+
+    <div id="JavaScript" class="conteudo">
+        <h3>JavaScript</h3>
+        <p>JavaScript é a linguagem de programação do HTML, com ela você pode programar o comportamento das páginas web.</p>
+    </div>
+    
+    <script>
+        document.getElementById('tab-padrao').click();
+
+        function abrirTab(event, idTab) {
+            var conteudo = document.getElementsByClassName('conteudo');
+
+            for( var i = 0; i < conteudo.length; i++) {
+                conteudo[i].style = 'none';
+            }
+
+            var tabs = document.getElementsByClassName('tab-button');
+            for( var i = 0; i < tabs.length; i++) {
+                tabs[i].className = tabs[i].className.replace('ativo', '');
+            }
+
+           document.getElementById(idTab).style.display = 'block';
+           event.currentTarget.className += ' ativo';
+        }
+
+    </script>
+</body>
+</html>
