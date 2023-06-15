@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    box-sizing: border-box;
+    
+    /*  border box agente especifica que a largura do elemento vai ser a largura dele mais o pedding mais a borda , sendo assim evitamos que o elemento oculpa o espaço maior que agente tem configurado na properiedade withg  */
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+}
+   
+   
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-1 {width: 8.33%;} /* 100%/12= 8.33*/
+
+.col-2 { width: 16.66%;} /* 100%/6=*/
+
+.col-3 {width: 25%;}
+
+.col-4 {  width: 33.33%;}
+
+.col-5 {width: 41.66%;}
+
+.col-6 {width: 50%;}
+
+.col-8 {width: 66.66%;}
+
+.col-9 {width: 75%;}
+
+.col-10 {width: 83.33%;}
+
+.col-11 {width: 91.66%;}
+
+.col-12 {width: 100%;}
+
+/* usado em celulares*/
+
+@media screen and (max-width: 600px) {
+    [class*="col-"] {
+    width:100%;
+}
+}
+
+/* usadado para tablets*/
+
+@media screen and (max-width:768px) {
+    
+.col-s-1 {width: 8.33%;} /* 100%/12= 8.33*/
+
+.col-s-2 { width: 16.66%;} /* 100%/6=*/
+
+.col-s-3 {width: 25%;}
+
+.col-s-4 {  width: 33.33%;}
+
+.col-s-5 {width: 41.66%;}
+
+.col-s-6 {width: 50%;}
+
+.col-s-8 {width: 66.66%;}
+
+.col-s-9 {width: 75%;}
+
+.col-s-10 {width: 83.33%;}
+
+.col-s-11 {width: 91.66%;}
+
+.col-s-12 {width: 100%;}
+
+}

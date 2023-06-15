@@ -1,0 +1,32 @@
+.mensagem {
+    padding: 20px;
+    color: white;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.mensagem-vermelha {
+    background-color: #f44336;
+}
+
+.mensagem-verde {
+    background-color: #4caf50;
+}
+
+
+.mensagem-azul {
+ background-color: #2196f3;
+}
+
+
+.mensagem-amarela {
+    background-color: #ff9800;
+}
+
+
+
+.btn-fechar-mensagem {
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+}

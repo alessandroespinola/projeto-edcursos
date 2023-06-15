@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens</title>
+    <link rel="stylesheet" href="mensagem.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="botao.css">
+
+    <script src="mensagem.js"></script>
+</head>
+<body>
+
+    <!--
+    <div class="row">
+        <div class="col-12 col-s-12">
+
+            <div class="mensagem mensagem-vermelha">
+                Indica que alguma ação deu errada
+                <span class="btn-fechar-mensagem" onclick="fecharMensagem(event)">&times;</span>
+            </div>
+
+            <div class="mensagem mensagem-verde">
+                Indica que alguma ação foi bem-sucedida
+                <span class="btn-fechar-mensagem" onclick="fecharMensagem(event)">&times;</span>
+            </div>
+
+            <div class="mensagem mensagem-azul">
+                Indica uma informação neutra
+                <span class="btn-fechar-mensagem" onclick="fecharMensagem(event)">&times;</span>
+            </div>
+
+            <div class="mensagem mensagem-amarela">
+                Indica um aviso que precisa de atenção
+                <span class="btn-fechar-mensagem" onclick="fecharMensagem(event)">&times;</span>
+            </div>
+
+        </div>
+    </div>
+
+    -->
+
+    <div class="row">
+        <div class="col-12 col-s-12">
+
+            <div id="mensagens"></div>
+        </div>
+    </div>
+
+    
+    <div class="row">
+
+        <div class="col-3 col-s-3">
+              <button class="btn verde"  onclick="abrirMensagem('mensagem-verde', 'Mensagem verde')">Mensagem Verde</button>
+         </div>
+
+         <div class="col-3 col-s-3">
+            <button class="btn azul" onclick="abrirMensagem('mensagem-azul', 'Mensagem azul')">Mensagem Azul</button>
+         </div>
+
+         <div class="col-3 col-s-3">
+            <button class="btn laranja" onclick="abrirMensagem('mensagem-amarela', 'Mensagem Amarela')">Mensagem Amarela</button>
+         </div>
+
+         <div class="col-3 col-s-3">
+            <button class="btn vermelho" onclick="abrirMensagem('mensagem-vermelha', 'Mensagem Vermelha')">Mensagem Vermelha</button>
+         </div>
+    
+    
+    </div>
+    
+    
+</body>
+</html>
