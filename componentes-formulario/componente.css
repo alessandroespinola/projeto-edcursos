@@ -38,3 +38,8 @@ legend {
     border:  1px solid #00aeef;
     box-shadow: 0 0 4px rgba(11, 195, 241, 0.7);
 }
+
+textarea {
+    resize: none;
+    
+}
